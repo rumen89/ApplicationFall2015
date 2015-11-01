@@ -1,4 +1,4 @@
-package depedenciesResolving;
+package DependenciesResolving;
 
 import java.util.HashMap;
 import java.util.Map;
