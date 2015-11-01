@@ -1,4 +1,4 @@
-package depedenciesResolving;
+package DependenciesResolving;
 
 import java.io.File;
 import java.io.IOException;
