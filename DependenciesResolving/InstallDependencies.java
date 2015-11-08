@@ -1,4 +1,5 @@
-package DependenciesResolving;
+
+package depedenciesResolving;
 
 import java.io.File;
 import java.io.IOException;
@@ -38,7 +39,7 @@ public class InstallDependencies {
 
 	private static boolean isModuleInPackages(String module) {
 		File file = new File(
-				"D:\\Documents\\HackBulgaria\\ApplicationFall2015\\src\\installed_modules");
+				"/home/ruci/workspace/App/src/depedenciesResolving/installed_modules");
 		File[] listOfFiles = file.listFiles();
 		for (int i = 0; i < listOfFiles.length; i++) {
 			if (listOfFiles[i].isFile()) {
@@ -53,7 +54,7 @@ public class InstallDependencies {
 	}
 
 	private static void createPackage(Object object) {
-		String nameNewFile = "D:\\Documents\\HackBulgaria\\ApplicationFall2015\\src\\installed_modules\\"
+		String nameNewFile = "/home/ruci/workspace/App/src/depedenciesResolving/installed_modules/"
 				+ object;
 		File newModule = new File(nameNewFile);
 		try {
