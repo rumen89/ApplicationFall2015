@@ -1,4 +1,4 @@
-package DependenciesResolving;
+package depedenciesResolving;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -19,6 +19,6 @@ public class Main {
 
 		InstallDependencies.installModule("backbone", allPackages);
 
+		System.out.println("All done.");
 	}
-
 }
