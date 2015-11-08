@@ -31,9 +31,12 @@ public class InstallDependencies {
 				installModule(nameTwo, json);
 			} else {
 				System.out.println("In order to install " + moduleName
-						+ " you need to install " + nextModule);
+						+ " you need to install " + nextModule + ".");
 				installModule(nextModule, json);
 			}
+		}
+		if (!isModuleInPackages(moduleName)) {
+			createPackage(moduleName);
 		}
 	}
 
